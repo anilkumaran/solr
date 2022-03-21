@@ -1,4 +1,8 @@
 # solr
+## Create a core
+./create_core.sh <core-name-here>
+Ex: ./create_core.sh mycore
+
 ## Delete a core
 curl http://localhost:8983/solr/admin/cores?action=UNLOAD&core=mycore1&deleteIndex=true&deleteDataDir=true&deleteInstanceDir=true -H "Content-Type: text/xml"
 
